@@ -73,7 +73,7 @@ async function getPhotos() {
 
 //infinit scroll function 
 window.addEventListener('scroll', () => {
-    if (window.scrollY + window.innerHeight >= document.body.offsetHeight - 1000 && ready) {
+    if (window.scrollY + window.innerHeight >= document.body.offsetHeight - 1000 ) {
         ready = false;
         getPhotos();
     }
